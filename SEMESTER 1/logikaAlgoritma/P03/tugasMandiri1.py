@@ -1,0 +1,10 @@
+bil1 = int(input("Masukkan bilangan 1 : "));
+bil2 = int(input("Masukkan bilangan 2 : "));
+bil3 = int(input("Masukkan bilangan 3 : "));
+bil4 = int(input("Masukkan bilangan 4 : "));
+bilBesar = max(bil1, bil2, bil3, bil4);
+print("Bilangan 1 adalah :", bil1);
+print("Bilangan 2 adalah :", bil2);
+print("Bilangan 3 adalah :", bil3);
+print("Bilangan 4 adalah :", bil4);
+print("Bilangan terbesar adalah :",bilBesar);
