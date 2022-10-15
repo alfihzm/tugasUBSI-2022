@@ -1,1 +1,0 @@
-# Latihan 2
