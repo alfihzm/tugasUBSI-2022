@@ -1,6 +1,8 @@
 # tugasUBSI-2022
-Semua tugas matkul dari semester 1 - 8
-Universitas Bina Sarana Informatika
+Semua tugas mata kuliah Universitas Bina Sarana Informatika semester 1 - 8
 
-Nama        : Mohammad Alfi Hamzami
-Prodi       : Sistem Informasi
+Periode : September 2022
+
+Nama : Mohammad Alfi Hamzami
+
+Prodi : Sistem Informasi
