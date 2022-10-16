@@ -12,7 +12,13 @@ print("S ", "Sayap".center(30), "    Rp 1500");
 print(sep1 * 46);
 
 #Input User
-banyakJenis = int(input("Masukkan Jumlah Menu : "));
+while True :
+     try :
+          banyakJenis = int(input("Masukkan Jumlah Menu : "));
+          break;
+     except ValueError :
+          print("Masukkan dalam bentuk angka");
+
 kodeAyam = [];
 banyakAyam = [];
 jenisAyam = [];
