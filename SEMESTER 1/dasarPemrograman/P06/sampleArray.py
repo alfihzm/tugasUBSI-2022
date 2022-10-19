@@ -3,7 +3,7 @@ sampleArray = [
     [4, 5, 6],
     [7, 8, 9],
        [0]
-]
+];
 
 print("Baris ke-satu,  Kolom ke-satu adalah  : ", sampleArray[0][0]);
 print("Baris ke-satu,  Kolom ke-dua adalah   : ", sampleArray[0][1]);
