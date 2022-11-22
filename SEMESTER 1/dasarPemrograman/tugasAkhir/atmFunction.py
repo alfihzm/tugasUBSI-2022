@@ -29,3 +29,16 @@ class atmFungsi :
         self.namaBelakang = newVal;
     def setSaldo(self, newVal):
         self.saldo = newVal;
+
+class dataNasabah :
+    def __init__(self, dataNoRekening, namaDepanRekening, namaBelakangRekening):
+        self.dataNoRekening       = dataNoRekening;
+        self.namaDepanRekening    = namaDepanRekening;
+        self.namaBelakangRekening = namaBelakangRekening;
+
+    def cekdataRekening(self):
+        return self.noRekening;
+    def cekDataNamaDepan(self):
+        return self.namaDepan;
+    def cekDataNamaBelakang(self):
+        return self.namaBelakang;
