@@ -1,6 +1,7 @@
 class atmFungsi :
-    def __init__(self, noRekening, pin, namaDepan, namaBelakang, saldo):
+    def __init__(self, noRekening, noPelanggan, pin, namaDepan, namaBelakang, saldo):
         self.noRekening   = noRekening;
+        self.noPelanggan  = noPelanggan;
         self.pin          = pin;
         self.namaDepan    = namaDepan;
         self.namaBelakang = namaBelakang;
@@ -11,6 +12,8 @@ class atmFungsi :
         return self.noRekening;
     def cekPin(self):
         return self.pin;
+    def cekNoPelanggan(self):
+        return self.noPelanggan;
     def cekNamaDepan(self):
         return self.namaDepan;
     def cekNamaBelakang(self):
@@ -23,6 +26,8 @@ class atmFungsi :
         self.noRekening = newVal;
     def setPin(self, newVal):
         self.pin = newVal
+    def setNoPelanggan(self, newVal):
+        self.noPelanggan = newVal;
     def setNamaDepan(self, newVal):
         self.namaDepan = newVal;
     def setNamaBelakang(self, newVal):
@@ -42,3 +47,18 @@ class dataNasabah :
         return self.namaDepan;
     def cekDataNamaBelakang(self):
         return self.namaBelakang;
+
+class dataPembayaran :
+    def __init__(self, nomorPelanggan, atasNama):
+        self.nomorPelanggan       = nomorPelanggan;
+        self.atasNama             = atasNama;
+
+    def cekNomorPelanggan(self):
+        return self.nomorPelanggan;
+    def cekAtasNama(self):
+        return self.atasNama;
+
+    def setNomorPelanggan(self, newVal):
+        self.nomorPelanggan = newVal;
+    def setAtasNama(self, newVal):
+        self.atasNama = newVal;
