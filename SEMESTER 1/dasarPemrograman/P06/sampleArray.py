@@ -5,6 +5,8 @@ sampleArray = [
        [0]
 ];
 
+print(sampleArray);
+
 print("Baris ke-satu,  Kolom ke-satu adalah  : ", sampleArray[0][0]);
 print("Baris ke-satu,  Kolom ke-dua adalah   : ", sampleArray[0][1]);
 print("Baris ke-satu,  Kolom ke-tiga adalah  : ", sampleArray[0][2]);

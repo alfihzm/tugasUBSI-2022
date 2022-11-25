@@ -8,7 +8,7 @@ while n >= n :
         print("Melebihi Limit!, input ulang");
         continue;
     
-    while char == char :
+    while char :
         char = input("Masukkan (@, #, $, %, !) : ");
         if char not in symbol :
             print("Symbol Salah!, input ulang");

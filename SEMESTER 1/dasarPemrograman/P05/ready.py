@@ -20,6 +20,8 @@ while True :
      except ValueError :
           print("Masukkan dalam bentuk angka");
 
+kode = ["D", "P", "S"];
+simpanKode = [];
 kodeAyam = [];
 banyakAyam = [];
 jenisAyam = [];
@@ -36,23 +38,24 @@ while i < banyakJenis :
         jenisAyam.append("Dada ");
         harga.append("Rp 2,500");
         jumlah.append(banyakAyam[i]*int("2500"));
-    
+            
     elif kodeAyam[i] == "P" or kodeAyam[i] == "p" :
-         jenisAyam.append("Paha ");
-         harga.append("Rp 2,000");
-         jumlah.append(banyakAyam[i]*int("2000"));
-    
+        jenisAyam.append("Paha ");
+        harga.append("Rp 2,000");
+        jumlah.append(banyakAyam[i]*int("2000"));
+            
     elif kodeAyam[i] == "S" or kodeAyam[i] == "s" :
-         jenisAyam.append("Sayap");
-         harga.append("Rp 1,500");
-         jumlah.append(banyakAyam[i]*int("1500"));
+        jenisAyam.append("Sayap");
+        harga.append("Rp 1,500");
+        jumlah.append(banyakAyam[i]*int("1500"));
 
     else :
-         jenisAyam.append("Kode Salah");
-         harga.append("0");
-         jumlah.append(banyakAyam[i]*int("0"));
+        jenisAyam.append("Kode Salah");
+        harga.append("0");
+        jumlah.append(banyakAyam[i]*int("0"));
 
-    i += 1;
+    i = i + 1;
+
 
 print(sep1 * 67);
 print("ALFIE'S FRIED CHICKEN".center(67));
