@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DESKTOP NAVIGATION */
+nav {
+    position: fixed;
+    z-index: 98;
+    height: 12%;
+    width: 100vw;
+    background: #000000a6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(3px);
+}
+
+nav .logo {
+    position: relative;
+    user-select: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8em;
+    margin-left: 4rem;
+}
+
+nav ul {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    transition: .3s ease;
+}
+
+ul li ul.dropdown a {
+    width: auto;
+}
+
+ul li a:hover {
+    background: #00000000;
+    width: 100%;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    background: #2a2a2a68;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+nav a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 23px;
+    width: 100%;
+    height: 0.12vw;
+    background: #ff9f31;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+nav a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+    position: fixed;
+    z-index: 99;
+    right: 8vw;
+    top: 3.6%;
+    display: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #FFF;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    top: 12vh;
+    left: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    text-align: right;
+    display: block;
+    z-index: 99;
+    background: #323333;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 100vw;
+}
+
+.mobile-nav li {
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+
+
+/* BERANDA */
+#section1 {
+    background: url(../images/Lambo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper1 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Battambang', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 17%;
+    width: 55%;
+    background: #8585859f;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid #ff9f31;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchBar {
+    background: #ffffff8d;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 80%;
+    height: 100%;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    outline-style: none;
+    border: none;
+    text-align: left;
+}
+
+.searchBar::placeholder {
+    text-align: center;
+}
+
+.wrapper1 p {
+    user-select: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.2vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+
+.wrapper1 button {
+    background: none;
+    border-radius: 35px;
+    margin: 1.2em;
+    padding: .7em 1.2em;
+    font-size: 1em;
+    border: none ;
+}
+
+
+/* TENTANG */
+#section2 {
+    background: #FFF;
+    height: 100%;
+}
+
+#section2 h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.container2 {
+    height: 100%;
+}
+
+.wrapper2 {
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper2 .ourbox1 {
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    background: #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px;
+    margin-bottom: 5%;
+}
+
+.ourbox1 .images {
+    width: 45%;
+}
+
+.ourbox1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ourbox1 .description {
+    font-size: 1.2em;
+    width: 45%;
+}
+
+/* TENTANG VISI & MISI */
+
+/* .wrapper2 .ourboxes {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.ourboxes .visi {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: #e1e1e1;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.ourboxes .misi {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: #e1e1e1;
+    border-radius: 10px;
+    margin: 20px;
+} */
+
+/* FOOTER */
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .logo {
+        right: 4vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .wrapper1 p {
+        font-size: 4vw;
+    }
+
+    .wrapper2 .ourbox1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        font-size: 100%;
+    }
+
+    .ourbox1 .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ourbox1 img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .ourbox1 .description {
+        font-size: 1em;
+        width: auto;
+    }
+}
