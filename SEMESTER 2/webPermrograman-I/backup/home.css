@@ -8,25 +8,14 @@
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1500px;
 }
 
-#section1 {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    background: url(images/Lambo-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
+/* DESKTOP NAVIGATION */
 nav {
     position: fixed;
-    z-index: 10;
-    height: 70px;
-    width: 100%;
+    z-index: 98;
+    height: 12%;
+    width: 100vw;
     background: #000000a6;
     display: flex;
     align-items: center;
@@ -35,6 +24,7 @@ nav {
 }
 
 nav .logo {
+    position: relative;
     user-select: none;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.8em;
@@ -49,12 +39,49 @@ nav ul {
     font-family: 'Quicksand', sans-serif;
 }
 
-nav a {
+nav ul li {
+    display: inline-block;
     position: relative;
-    font-size: 1.1em;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    font-size: 1.2em;
     cursor: pointer;
     color: rgb(233, 233, 233);
     text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    transition: .3s ease;
+}
+
+ul li ul.dropdown a {
+    width: auto;
+}
+
+ul li a:hover {
+    background: #00000000;
+    width: 100%;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    background: #2a2a2a68;
 }
 
 nav a:hover {
@@ -66,7 +93,7 @@ nav a::after {
     position: absolute;
     content: '';
     left: 0;
-    top: 24px;
+    top: 23px;
     width: 100%;
     height: 0.12vw;
     background: #ff9f31;
@@ -80,30 +107,110 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+    position: fixed;
+    z-index: 99;
+    right: 8vw;
+    top: 3.6%;
+    display: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #FFF;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    top: 12vh;
+    left: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    text-align: right;
+    display: block;
+    z-index: 99;
+    background: #323333;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 100vw;
+}
+
+.mobile-nav li {
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+
+
+/* BERANDA */
+#section1 {
+    background: url(../images/Lambo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .container1 {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    right: 0%;
     height: 100vh;
-    width: 100vw;
 }
 
 .wrapper1 {
-    font-size: 16px;
-    height: 10rem;
-    width: 70vw;
-    background: #e5dbdb;
-    background: #8585859f;
-    border-radius: 10px;
-    border: 1px solid #ff9f31;
-    backdrop-filter: blur(3px);
+    position: relative;
+    z-index: 1;
+    font-family: 'Battambang', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    height: 17%;
+    width: 55%;
+    background: #8585859f;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid #ff9f31;
+    font-size: 16px;
 }
 
 .search {
@@ -117,7 +224,7 @@ nav a:hover::after {
     background: #ffffff8d;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    width: 70%;
+    width: 80%;
     height: 100%;
     font-size: 1.2em;
     font-family: 'Quicksand', sans-serif;
@@ -133,7 +240,7 @@ nav a:hover::after {
 .wrapper1 p {
     user-select: none;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 2.2vw;
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
 }
@@ -147,192 +254,139 @@ nav a:hover::after {
     border: none ;
 }
 
-.wrapper1 a {
-    cursor: pointer;
-    background: #0000003e;
-    color: #FFF;
-    backdrop-filter: blur(2px);
-    border-radius: 35px;
-    margin: 1.2em;
-    padding: .7em 1.2em;
-    font-size: 1em;
-    border: none;
-    text-decoration: none;
-}
 
-.wrapper1 a:hover {
-    background: #ff9f31;
-    color: #FFF;
-    transition: 0.3s ease;
-}
-
-.wrapper1 a:focus,
-.wrapper1 a:hover{
-    outline-offset: 3px;
-}
-
-/* Content 2 */
-#content2 {
-    position: absolute;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 100%;
+/* TENTANG */
+#section2 {
+    background: #FFF;
     height: 100%;
 }
 
-.container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container2 h1 {
-    font-size: 2.5rem;
+#section2 h1 {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-family: 'Battambang', cursive;
     margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 2em;
 }
 
-#content2 .wrapper2 {
+.container2 {
+    height: 100%;
+}
+
+.wrapper2 {
+    background: #ffffff;
     display: flex;
-    margin-top: 1em;
-    margin-bottom: 3em;
-    width: 85%;
-}
-
-.box1 {
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #e4e1e1ba;
-    height: 50vh;
-}
-
-.wrapper2 .images {
-    align-self: center;
-    display: flex;
-    width: 40%;
-    margin-left: 2.5%;
-}
-
-.wrapper2 img {
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    overflow: hidden;
-    transition: .3s ease;
-    border: 2px solid #6f6f6f;
+}
+
+.wrapper2 .ourbox1 {
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    background: #e1e1e1;
     border-radius: 10px;
-}
-
-.box2 {
-    margin-left: 5%;
-    margin-top: 3%;
-    flex-direction: column;
-    width: 40%;
-}
-
-.box2 .title {
-    margin-bottom: 15px;
-}
-
-.wrapper2 span {
-    user-select: none;
-    font-family: 'Battambang', cursive;
-    width: 10%;
-    font-size: 1.7vw;
-}
-
-.box2 h1:hover {
-    transition: .2s ease;
-    color: #ff9f31;
-}
-
-.wrapper2 p {
-    user-select: none;
-    font-family: 'Battambang', cursive;
-    font-weight: 370;
-    font-size: 75%;
-}
-
-.wrapper3 .boxes1 {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px;
+    margin-bottom: 5%;
+}
+
+.ourbox1 .images {
+    width: 45%;
+}
+
+.ourbox1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ourbox1 .description {
+    font-size: 1.2em;
+    width: 45%;
+}
+
+/* TENTANG VISI & MISI */
+
+/* .wrapper2 .ourboxes {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.ourboxes .visi {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: #e1e1e1;
     border-radius: 10px;
-    overflow: hidden;
-    background: #e4e1e1ba;
-    margin-top: 1%;
-    height: 50vh;
-    width: 84vw;
+    margin: 20px;
+}
+
+.ourboxes .misi {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: #e1e1e1;
+    border-radius: 10px;
+    margin: 20px;
+} */
+
+/* FOOTER */
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
 
 
 
-/* Box 2 */
-.images1 {
-    align-self: center;
-    display: flex;
-    width: 40%;
-    margin-left: 2.5%;
-}
-
-
-
-/* Responsive Point */
+/* RESPONSIVE BREAKPOINT */
 @media screen and (max-width: 768px) {
-    /* Content 1 */
-    .wrapper1 {
-        margin-top: 25%;
-        margin-right: 40%;
-        width: 55vw;
+    nav ul {
+        display: none;
+    }
+
+    nav .logo {
+        right: 4vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .wrapper1 p {
+        font-size: 4vw;
+    }
+
+    .wrapper2 .ourbox1 {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        font-size: 100%;
     }
 
-    .wrapper1 h1 {
-        font-size: 6vw;
+    .ourbox1 .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    .wrapper1 button {
-        font-size: 2.5vw;
+    .ourbox1 img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
     }
 
-
-    /* Content 2 */
-    .box2 {
-        width: 59%;
-
-    }
-    .container2 h1 {
-        font-size: 3.2vw;
-    }
-
-    div .box2 p {
-        font-size: 2.3vw;
-    }
-
-    /* wrapper 3 */
-    .box4 {
-        width: 59%;
-
-    }
-    .wrapper3 h1 {
-        font-size: 3.2vw;
-    }
-
-    div .box4 p {
-        font-size: 2.3vw;
-    }
-
-    /* wrapper 4 */
-    .box6 {
-        width: 59%;
-
-    }
-    .wrapper4 h1 {
-        font-size: 3.2vw;
-    }
-
-    div .box6 p {
-        font-size: 2.3vw;
+    .ourbox1 .description {
+        font-size: 1em;
+        width: auto;
     }
 }

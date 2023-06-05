@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title> GarageRX | Indonesia </title>
 </head>
 
@@ -59,20 +60,28 @@
     <!-- BERANDA -->
     <section id="section1" class="home">
         <div class="container1">
-            <div class="wrapper1">
-                <p> Lagi cari apa? </p>
-                <div class="search">
-                    <input class="searchBar" name="searchBar" placeholder="Cari di sini"></input>
-                    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary: #FFF"
-                        style="width:35px;height:35px;background:#ffffff8d;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
-                    </lord-icon>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/car-5.jpg" alt="car-1"></div>
+                    <div class="swiper-slide"><img src="images/car-6.jpg" alt="car-1"></div>
+                    <div class="swiper-slide"><img src="images/car-4.jpg" alt="car-1"></div>
+                    <div class="swiper-slide"><img src="images/car-10.jpg" alt="car-1"></div>
+
                 </div>
-            </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <div class="homeNews">
-
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+        </div>
+
+        <div class="homeNews">
+
+        </div>
         </div>
     </section>
 
@@ -86,14 +95,20 @@
                 <div class="wrapper2">
                     <div class="ourbox1">
                         <div class="images">
-                            <img src="images/machine.jpg" alt="machine">
+                            <img src="images/car-inside.jpg" alt="machine">
                         </div>
                         <div class="description">
                             <p> Selamat datang di GarageRX </p>
                             <br>
-                            <p> GarageRX adalah destinasi utama bagi pecinta mobil dan penggemar dunia otomotif. Kami adalah sumber terpercaya untuk segala hal terkait dengan kendaraan, menyediakan beragam informasi terkini, ulasan kendaraan, tips perawatan, dan berita terbaru dari industri otomotif. </p>
+                            <p> GarageRX adalah destinasi utama bagi pecinta mobil dan penggemar dunia otomotif. Kami
+                                adalah sumber terpercaya untuk segala hal terkait dengan kendaraan, menyediakan beragam
+                                informasi terkini, ulasan kendaraan, tips perawatan, dan berita terbaru dari industri
+                                otomotif. </p>
                             <br>
-                            <p> Di Web Informasi GarageRX, Anda akan menemukan berbagai artikel informatif yang mencakup segala aspek tentang kendaraan. Apakah Anda mencari informasi tentang mobil baru, ulasan tentang model terbaru, atau ingin mengetahui lebih banyak tentang teknologi terkini dalam industri otomotif, kami memiliki semua yang Anda butuhkan. </p>
+                            <p> Di Web Informasi GarageRX, Anda akan menemukan berbagai artikel informatif yang mencakup
+                                segala aspek tentang kendaraan. Apakah Anda mencari informasi tentang mobil baru, ulasan
+                                tentang model terbaru, atau ingin mengetahui lebih banyak tentang teknologi terkini
+                                dalam industri otomotif, kami memiliki semua yang Anda butuhkan. </p>
                         </div>
                     </div>
 
@@ -135,7 +150,8 @@
         <p> Hak Cipta &copy GarageRX 2023. All rights reserved. </p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="JS/swiper.js"></script>
     <script src="JS/script.js"></script>
 </body>
 

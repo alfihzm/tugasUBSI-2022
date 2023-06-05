@@ -24,19 +24,10 @@
                 <span style="color: rgb(255, 255, 255)">Garage</span><span style="color: #eaa420">RX</span><span
                     style="color: rgb(255, 255, 255)">.</span>
             </div>
+
             <div class="searchBar">
                 <div class="search">
                     <input class="searchBar" name="searchBar" placeholder="Cari di sini"></input>
-                    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary: #FFF"
-                        style=>
-                    </lord-icon>
-                </div>
-            </div>
-
-            <div class="searchBar2">
-                <div class="search2">
-                    <input class="searchBars" name="searchBars" placeholder="Cari di sini"></input>
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                     <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary: #FFF"
                         style=>
@@ -62,8 +53,13 @@
     </header>
 
     <button class="hamburger">
-            <div class="bar"></div>
-        </button>
+        <div class="bar"></div>
+    </button>
+
+    <!-- <button class="hamburger-2">
+        <div class="bars"></div>
+    </button> -->
+
     </header>
     <nav class="mobile-nav">
         <ul>
@@ -74,27 +70,23 @@
             <li><a href="#"> Lainnya </a></li>
         </ul>
     </nav>
-    
-    <button class="hamburger-2">
-        <div class="bars"></div>
-    </button>
 
-    <section id="section1">
+    <!-- <nav class="wrapping">
+        <ul>
+            <li><a href="informasi/mobil.php"> Mobil </a></li>
+            <a href="informasi/suku-cadang.php"> Suku Cadang </a>
+            <a href="informasi/ban.php"> Ban </a>
+        </ul>
+    </nav> -->
+
+    <div id="section1">
         <div class="container1">
             <div class="wrapper1">
-                <div class="items">
-                    <a href="#"> Mobil </a>
-                    <a href="#"> Motor </a>
-                    <a href="#"> Suku Cadang </a>
-                    <a href="#"> Ban </a>
-                </div>
+                
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p> Hak Cipta &copy GarageRX 2023. All rights reserved. </p>
-    </footer>
 
     <script src="JS/script1.js"></script>
 </body>
