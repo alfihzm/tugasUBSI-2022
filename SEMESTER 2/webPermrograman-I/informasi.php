@@ -40,12 +40,8 @@
                 <li><a href="home.php#about-us"> Tentang </a></li>
                 <li><a href="informasi.php"> Informasi </a></li>
                 <li>
-                    <a href="#"> Lainnya ▾ </a>
-                    <ul class="dropdown">
-                        <li><a href="#"> Tips </a></li>
-                        <li><a href="#"> Artikel </a></li>
-                        <li><a href="#"> Galeri </a></li>
-                    </ul>
+                    <a href="#"> Lainnya </a>
+                    
                 </li>
                 <li><a href="login.php"> Login </a></li>
             </ul>
@@ -56,18 +52,18 @@
         <div class="bar"></div>
     </button>
 
-    <!-- <button class="hamburger-2">
+    <button class="hamburger-2">
         <div class="bars"></div>
-    </button> -->
+    </button>
 
     </header>
     <nav class="mobile-nav">
         <ul>
             <li><a href="home.php"> Beranda </a></li>
-            <li><a href="#about-us"> Tentang </a></li>
-            <li><a href="#service"> Informasi </a></li>
-            <li><a href="#"> Galeri </a></li>
+            <li><a href="home.php#about-us"> Tentang </a></li>
+            <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Lainnya </a></li>
+            <li><a href="login.php"> Login </a></li>
         </ul>
     </nav>
 
@@ -82,7 +78,52 @@
     <div id="section1">
         <div class="container1">
             <div class="wrapper1">
-                
+                <div class="title">
+                    <h1> Informasi Terkini </h1>
+                </div>
+
+                <div class="news1">
+                    <div class="news-info">
+                        <img src="images/new-pajero-sport.jpg" alt="sedan">
+                        <div class="news-desc">
+                            <h3> Semakin Gahar! Spesifikasi All New Pajero Sport 2023 </h3>
+                            <p> Otomotif • 2 jam yang lalu </p>
+                        </div>
+                    </div>
+                    
+                    <div class="news-info">
+                        <img src="images/gas.jpg" alt="gas">
+                        <div class="news-desc">
+                            <h3> Dikabarkan Tarif BBM Akan Naik Tahun Depan </h3>
+                            <p> Bahan Bakar • 5 jam yang lalu </p>
+                        </div>
+                    </div>
+
+                    <div class="news-info">
+                        <img src="images/sedan.jpg" alt="sedan">
+                        <div class="news-desc">
+                            <h3> Lama Menghilang, 5 Sedan ini Dikabarkan Akan Hadir Kembali dengan Tampilan Baru </h3>
+                            <p> Otomotif • 10 jam yang lalu </p>
+                        </div>
+                    </div>
+
+                    <div class="news-info">
+                        <img src="images/Elon-Ma1.jpg" alt="jokowi-elon">
+                        <div class="news-desc">
+                            <h3> Elon Musk Dikabarkan akan Berinvestasi di Indonesia </h3>
+                            <p> Investasi • 2 hari yang lalu </p>
+                        </div>
+                    </div>
+
+                    <div class="news-info">
+                        <img src="images/peta-ganjil-genap1.jpg" alt="ganjil-genap">
+                        <div class="news-desc">
+                            <h3> Ganjil Genap Jakarta 2023 di Mana Saja? Ini Lokasinya  </h3>
+                            <p> Peta Jalan • 3 hari yang lalu </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

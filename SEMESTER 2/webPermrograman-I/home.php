@@ -29,14 +29,7 @@
                 <li><a href="home.php"> Beranda </a></li>
                 <li><a href="#about-us"> Tentang </a></li>
                 <li><a href="informasi.php"> Informasi </a></li>
-                <li>
-                    <a href="#"> Lainnya ▾ </a>
-                    <ul class="dropdown">
-                        <li><a href="#"> Tips </a></li>
-                        <li><a href="#"> Artikel </a></li>
-                        <li><a href="#"> Galeri </a></li>
-                    </ul>
-                </li>
+                <li><a href="#"> Lainnya </a></li>
                 <li><a href="login.php"> Login </a></li>
             </ul>
         </nav>
@@ -49,9 +42,9 @@
         <ul>
             <li><a href="home.php"> Beranda </a></li>
             <li><a href="#about-us"> Tentang </a></li>
-            <li><a href="#service"> Informasi </a></li>
+            <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Galeri </a></li>
-            <li><a href="#"> Lainnya </a></li>
+            <li><a href="login.php"> Lainnya </a></li>
         </ul>
     </nav>
 
@@ -64,10 +57,10 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/car-5.jpg" alt="car-1"></div>
-                    <div class="swiper-slide"><img src="images/car-6.jpg" alt="car-1"></div>
-                    <div class="swiper-slide"><img src="images/car-4.jpg" alt="car-1"></div>
-                    <div class="swiper-slide"><img src="images/car-10.jpg" alt="car-1"></div>
+                    <div class="swiper-slide"><img src="images/car-1.jpg" alt="car-1"></div>
+                    <div class="swiper-slide"><img src="images/car-2.jpg" alt="car-2"></div>
+                    <div class="swiper-slide"><img src="images/tengyart-90HcLnI0T1w-unsplash.jpg" alt="car-3"></div>
+                    <div class="swiper-slide"><img src="images/car-10.jpg" alt="car-4"></div>
 
                 </div>
                 <!-- If we need pagination -->

@@ -42,7 +42,6 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
     position: relative;
     font-size: 1.2em;
     cursor: pointer;
@@ -205,11 +204,11 @@ nav .searchBar::placeholder {
 
 
 /* HAMBURGER NAV */
-/* .hamburger-2 {
+.hamburger-2 {
     position: fixed;
     z-index: 99;
-    left: 1vw;
-    top: 13.5vh;
+    left: 30px;
+    top: 110px;
     display: block;
     width: 35px;
     height: 35px;
@@ -241,7 +240,7 @@ nav .searchBar::placeholder {
 
 .hamburger-2.is-active .bars {
     opacity: 0;
-} */
+}
 
 /* .wrapping {
     transition: 0.2s ease-out;
@@ -284,18 +283,58 @@ nav .searchBar::placeholder {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: #303232;
+    width: 100%;
 }
 
 .wrapper1 {
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border-radius: 10px;
-    width: 90%;
-    height: 90vh;
-    background: #FFF;
+    width: 75%;
+    height: 180vh;
 }
 
+.wrapper1 .title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.7rem;
+}
+
+.wrapper1 .news1 {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper1 .news-info {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.wrapper1 img {
+    height: 30vh;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.wrapper1 .news-desc {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+.wrapper1 .news-desc p {
+    margin-top: 3%;
+    font-size: .7em;
+}
 
 /* RESPONSIVE BREAKPOINT */
 @media screen and (max-width: 945px) {
@@ -327,34 +366,24 @@ nav .searchBar::placeholder {
         width: 35%;
     }
 
-    .wrapper1 p {
-        font-size: 4vw;
+    .wrapper1 .title {
+        font-size: 0.8rem;
     }
 
-    .wrapper2 .ourbox1 {
+    .wrapper1 img {
+        border-radius: 5px;
+    }
+
+    .news1 .news-info {
+        height: 320px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        font-size: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 15%;
     }
 
-    .ourbox1 .images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    .news-desc {
+        height: 5vh;
+        margin-top: 0%;
     }
 
-    .ourbox1 img {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 10%;
-    }
-
-    .ourbox1 .description {
-        font-size: 1em;
-        width: auto;
-    }
 }

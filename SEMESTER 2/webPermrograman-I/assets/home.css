@@ -39,13 +39,7 @@ nav ul {
     font-family: 'Quicksand', sans-serif;
 }
 
-nav ul li {
-    display: inline-block;
-    position: relative;
-}
-
 nav ul li a {
-    display: block;
     position: relative;
     font-size: 1.2em;
     cursor: pointer;
@@ -57,14 +51,11 @@ nav ul li a {
 ul li ul.dropdown li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 60px;
 }
 
 ul li ul.dropdown {
     width: 100%;
-    position: absolute;
     z-index: 999;
     display: none;
     transition: .3s ease;
@@ -181,7 +172,8 @@ nav a:hover::after {
 
 /* BERANDA */
 #section1 {
-    background: #181818;
+    height: auto;
+    background: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -194,7 +186,15 @@ nav a:hover::after {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
     height: 100vh;
+    object-position: center;
+}
+
+.container1 img {
+    height: max-content;
 }
 
 .swiper {
@@ -365,13 +365,22 @@ footer p {
 
 
 /* RESPONSIVE BREAKPOINT */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1123px) {
     nav ul {
         display: none;
     }
 
     nav .logo {
         right: 4vw;
+    }
+
+    #section1 {
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:contain;
+        max-width: max-content;
+        height: fit-content;
     }
 
     .hamburger {
@@ -406,6 +415,62 @@ footer p {
 
     .ourbox1 .description {
         font-size: 1em;
+        width: auto;
+    }
+}
+
+/* 1124 */
+@media screen and (min-width: 1124px) and (max-width: 1224px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        right: 4vw;
+    }
+
+    #section1 {
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:contain;
+        max-width: max-content;
+        height: fit-content;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .wrapper1 p {
+        font-size: 4vw;
+    }
+
+    .wrapper2 .ourbox1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        font-size: 100%;
+    }
+
+    .ourbox1 .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ourbox1 img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .ourbox1 .description {
+        font-size: 1.2em;
         width: auto;
     }
 }
