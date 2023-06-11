@@ -25,7 +25,7 @@
                     style="color: rgb(255, 255, 255)">.</span>
             </div>
 
-            <div class="searchBar">
+            <!-- <div class="searchBar">
                 <div class="search">
                     <input class="searchBar" name="searchBar" placeholder="Cari di sini"></input>
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -33,17 +33,17 @@
                         style=>
                     </lord-icon>
                 </div>
-            </div>
+            </div> -->
 
             <ul>
-                <li><a href="home.html"> Beranda </a></li>
-                <li><a href="home.html#about-us"> Tentang </a></li>
-                <li><a href="informasi.html"> Informasi </a></li>
+                <li><a href="home.php"> Beranda </a></li>
+                <li><a href="home.php#about-us"> Tentang </a></li>
+                <li><a href="informasi.php"> Informasi </a></li>
                 <li>
                     <a href="#"> Lainnya </a>
                     
                 </li>
-                <li><a href="login.html"> Login </a></li>
+                <li><a href="login.php"> Login </a></li>
             </ul>
         </nav>
     </header>
@@ -59,11 +59,11 @@
     </header>
     <nav class="mobile-nav">
         <ul>
-            <li><a href="home.html"> Beranda </a></li>
-            <li><a href="home.html#about-us"> Tentang </a></li>
-            <li><a href="informasi.html"> Informasi </a></li>
+            <li><a href="home.php"> Beranda </a></li>
+            <li><a href="home.php#about-us"> Tentang </a></li>
+            <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Lainnya </a></li>
-            <li><a href="login.html"> Login </a></li>
+            <li><a href="login.php"> Login </a></li>
         </ul>
     </nav>
 
@@ -86,7 +86,7 @@
                     <div class="news-info">
                         <img src="images/new-pajero-sport.jpg" alt="sedan">
                         <div class="news-desc">
-                            <h3> Semakin Gahar! Spesifikasi All New Pajero Sport 2023 </h3>
+                            <h3><a href="#">Semakin Gahar! Spesifikasi All New Pajero Sport 2023 </a></h3>
                             <p> Otomotif • 2 jam yang lalu </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                     <div class="news-info">
                         <img src="images/gas.jpg" alt="gas">
                         <div class="news-desc">
-                            <h3> Dikabarkan Tarif BBM Akan Naik Tahun Depan </h3>
+                            <h3><a href="#">Dikabarkan Tarif BBM Akan Naik Tahun Depan </a></h3>
                             <p> Bahan Bakar • 5 jam yang lalu </p>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                     <div class="news-info">
                         <img src="images/sedan.jpg" alt="sedan">
                         <div class="news-desc">
-                            <h3> Lama Menghilang, 5 Sedan ini Dikabarkan Akan Hadir Kembali dengan Tampilan Baru </h3>
+                            <h3><a href="#">Lama Menghilang, 5 Sedan ini Dikabarkan Akan Hadir Kembali dengan Tampilan Baru </a></h3>
                             <p> Otomotif • 10 jam yang lalu </p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     <div class="news-info">
                         <img src="images/Elon-Ma1.jpg" alt="jokowi-elon">
                         <div class="news-desc">
-                            <h3> Elon Musk Dikabarkan akan Berinvestasi di Indonesia </h3>
+                            <h3><a href="#"> Elon Musk Dikabarkan akan Berinvestasi di Indonesia </a></h3>
                             <p> Investasi • 2 hari yang lalu </p>
                         </div>
                     </div>
@@ -118,8 +118,8 @@
                     <div class="news-info">
                         <img src="images/peta-ganjil-genap1.jpg" alt="ganjil-genap">
                         <div class="news-desc">
-                            <h3> Ganjil Genap Jakarta 2023 di Mana Saja? Ini Lokasinya  </h3>
-                            <p> Peta Jalan • 3 hari yang lalu </p>
+                        <h3><a href="#"> Ganjil Genap Jakarta 2023 di Mana Saja? Ini Lokasinya </a></h3>
+                            <p> Informasi • 3 hari yang lalu </p>
                         </div>
                     </div>
 

@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title> GarageRX | Indonesia </title>
+    <script defer src="JS/animate.js"></script>
 </head>
 
 <body>
@@ -26,11 +27,11 @@
                     style="color: rgb(255, 255, 255)">.</span>
             </div>
             <ul>
-                <li><a href="home.html"> Beranda </a></li>
+                <li><a href="home.php"> Beranda </a></li>
                 <li><a href="#about-us"> Tentang </a></li>
-                <li><a href="informasi.html"> Informasi </a></li>
+                <li><a href="informasi.php"> Informasi </a></li>
                 <li><a href="#"> Lainnya </a></li>
-                <li><a href="login.html"> Login </a></li>
+                <li><a href="login.php"> Login </a></li>
             </ul>
         </nav>
 
@@ -40,11 +41,11 @@
     </header>
     <nav class="mobile-nav">
         <ul>
-            <li><a href="home.html"> Beranda </a></li>
+            <li><a href="home.php"> Beranda </a></li>
             <li><a href="#about-us"> Tentang </a></li>
-            <li><a href="informasi.html"> Informasi </a></li>
+            <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Galeri </a></li>
-            <li><a href="login.html"> Lainnya </a></li>
+            <li><a href="login.php"> Lainnya </a></li>
         </ul>
     </nav>
 
