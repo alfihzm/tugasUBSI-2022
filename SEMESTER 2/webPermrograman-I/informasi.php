@@ -38,8 +38,8 @@
             </div> -->
 
             <ul>
-                <li><a href="home.php"> Beranda </a></li>
-                <li><a href="home.php#about-us"> Tentang </a></li>
+                <li><a href="index.html"> Beranda </a></li>
+                <li><a href="index.html#about-us"> Tentang </a></li>
                 <li><a href="informasi.php"> Informasi </a></li>
                 <li><a href="#"> Lainnya </a></li>
             </ul>
@@ -57,8 +57,8 @@
     </header>
     <nav class="mobile-nav">
         <ul>
-            <li><a href="home.php"> Beranda </a></li>
-            <li><a href="home.php#about-us"> Tentang </a></li>
+            <li><a href="index.html"> Beranda </a></li>
+            <li><a href="index.html#about-us"> Tentang </a></li>
             <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Lainnya </a></li>
         </ul>
