@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title> GarageRX | Indonesia </title>
     <script defer src="JS/animate.js"></script>
 </head>
@@ -31,7 +33,6 @@
                 <li><a href="#about-us"> Tentang </a></li>
                 <li><a href="informasi.php"> Informasi </a></li>
                 <li><a href="#"> Lainnya </a></li>
-                <li><a href="login.php"> Login </a></li>
             </ul>
         </nav>
 
@@ -44,7 +45,6 @@
             <li><a href="home.php"> Beranda </a></li>
             <li><a href="#about-us"> Tentang </a></li>
             <li><a href="informasi.php"> Informasi </a></li>
-            <li><a href="#"> Galeri </a></li>
             <li><a href="login.php"> Lainnya </a></li>
         </ul>
     </nav>
@@ -120,27 +120,12 @@
         </div>
     </section>
 
-
-
-
-
-    <!-- PELAYANAN -->
-    <!-- <section id="section3" class="aboutUs">
-        <div id="service">
-            <h1> Pelayanan </h1>
-            <div class="container2">
-                <div class="wrapper2">
-                    <div class="ourbox1">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <!-- FOOTER -->
     <footer>
+        <p><a href="https://www.instagram.com/garagerx_id/">
+            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+        </a></p>
+
         <p> Hak Cipta &copy GarageRX 2023. All rights reserved. </p>
     </footer>
 

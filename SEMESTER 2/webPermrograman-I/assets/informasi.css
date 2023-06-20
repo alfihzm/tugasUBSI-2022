@@ -236,44 +236,43 @@ nav .searchBar::placeholder {
 
 .hamburger-2.is-active:before {
     transform: rotate(-45deg) translate(-8px, 6px);
+    background: #FFF;
 }
 
 .hamburger-2.is-active:after {
     transform: rotate(45deg) translate(-9px, -8px);
+    background: #FFF;
 }
 
 .hamburger-2.is-active .bars {
     opacity: 0;
 }
 
-/* .wrapping {
-    transition: 0.2s ease-out;
+.items {
+    top: 7vh;
+    left: -100%;
+    width: 20vw;
+    position: fixed;
+    display: block;
+    background: #303232;
+    transition: 0.5s;
+    height: 100vh;
+    z-index: 9;
+}
+
+.items ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    z-index: 1;
-    background: #666666;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .items.is-active {
-    position: fixed;
-    transition: 0.2s ease-out;
     left: 0;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 1;
-    background: #666666;
-    height: 100%;
-    width: 100%;
 }
-
-.items.is-active a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1.2em;
-    font-family: 'Quicksand', sans-serif;
-} */
 
 
 /* CONTENTS */
@@ -292,10 +291,9 @@ nav .searchBar::placeholder {
 
 .wrapper1 {
     margin-top: 90px;
-    margin-bottom: 100px;
     border-radius: 10px;
     width: 75%;
-    height: 180vh;
+    height: auto;
 }
 
 .wrapper1 .title {
@@ -356,6 +354,25 @@ nav .searchBar::placeholder {
     font-size: .7em;
 }
 
+/* FOOTER */
+footer .icon {
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+
+footer .icon:hover {
+    transition: .1s ease-in;
+    color: #ff9f31;
+}
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
 /* RESPONSIVE BREAKPOINT */
 @media screen and (max-width: 945px) {
     nav ul {
@@ -390,7 +407,7 @@ nav .searchBar::placeholder {
         font-size: 0.8rem;
     }
 
-    .wrapper1 img {
+    .news-info img {
         border-radius: 5px;
     }
 

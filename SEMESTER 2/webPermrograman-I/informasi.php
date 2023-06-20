@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title> GarageRX | Indonesia </title>
 </head>
 
@@ -39,11 +41,7 @@
                 <li><a href="home.php"> Beranda </a></li>
                 <li><a href="home.php#about-us"> Tentang </a></li>
                 <li><a href="informasi.php"> Informasi </a></li>
-                <li>
-                    <a href="#"> Lainnya </a>
-                    
-                </li>
-                <li><a href="login.php"> Login </a></li>
+                <li><a href="#"> Lainnya </a></li>
             </ul>
         </nav>
     </header>
@@ -63,17 +61,16 @@
             <li><a href="home.php#about-us"> Tentang </a></li>
             <li><a href="informasi.php"> Informasi </a></li>
             <li><a href="#"> Lainnya </a></li>
-            <li><a href="login.php"> Login </a></li>
         </ul>
     </nav>
 
-    <!-- <nav class="wrapping">
+    <nav class="items">
         <ul>
             <li><a href="informasi/mobil.php"> Mobil </a></li>
-            <a href="informasi/suku-cadang.php"> Suku Cadang </a>
-            <a href="informasi/ban.php"> Ban </a>
+            <li><a href="#"> Suku Cadang </a></li>
+            <li><a href="#"> Ban </a></li>
         </ul>
-    </nav> -->
+    </nav>
 
     <div id="section1">
         <div class="container1">
@@ -90,7 +87,7 @@
                             <p> Otomotif • 2 jam yang lalu </p>
                         </div>
                     </div>
-                    
+
                     <div class="news-info">
                         <img src="images/gas.jpg" alt="gas">
                         <div class="news-desc">
@@ -102,7 +99,8 @@
                     <div class="news-info">
                         <img src="images/sedan.jpg" alt="sedan">
                         <div class="news-desc">
-                            <h3><a href="#">Lama Menghilang, 5 Sedan ini Dikabarkan Akan Hadir Kembali dengan Tampilan Baru </a></h3>
+                            <h3><a href="#">Lama Menghilang, 5 Sedan ini Dikabarkan Akan Hadir Kembali dengan Tampilan
+                                    Baru </a></h3>
                             <p> Otomotif • 10 jam yang lalu </p>
                         </div>
                     </div>
@@ -118,16 +116,22 @@
                     <div class="news-info">
                         <img src="images/peta-ganjil-genap1.jpg" alt="ganjil-genap">
                         <div class="news-desc">
-                        <h3><a href="#"> Ganjil Genap Jakarta 2023 di Mana Saja? Ini Lokasinya </a></h3>
+                            <h3><a href="#"> Ganjil Genap Jakarta 2023 di Mana Saja? Ini Lokasinya </a></h3>
                             <p> Informasi • 3 hari yang lalu </p>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <footer>
+                <p><a href="https://www.instagram.com/garagerx_id/">
+                        <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                    </a></p>
+
+                <p> Hak Cipta &copy GarageRX 2023. All rights reserved. </p>
+            </footer>
         </div>
     </div>
-
 
     <script src="JS/script1.js"></script>
 </body>

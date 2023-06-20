@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.back a {
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: #000;
+    margin-left: 2%;
+}
+
+.back a:hover {
+    color: #ff9f31;
+    transition: .2s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    background: #ffffff;
+    margin-bottom: 2%;
+}
+
+.wrapper {
+    padding: 5%;
+    background: #f4f4f4;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.wrapper .img {
+    width: 45%;
+}
+
+.wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wrapper .desc {
+    width: 45%;
+    height: 85%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc h1 {
+    margin-bottom: 5%;
+}
+
+
+
+/* CONTAINER2 */
+.container2 {
+    display: flex;
+    height: 100%;
+    background: #ffffff;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
+    padding: 2%;
+    background: #f4f4f4;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.wrapper2 h1 {
+    margin-bottom: 5%;
+}
+
+.wrapper2 th {
+    text-align: left;
+    height: 30px;
+    width: 40%;
+}
+
+/* HARGA */
+.wrapper3 {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f4f4;
+    padding: 2%;
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.wrapper3 th {
+    width: 45%;
+    text-align: left;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width: 450px) {
+    .wrapper {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .wrapper .img {
+        width: 100%;
+    }
+
+    .wrapper .desc {
+        width: 100%;
+    }
+
+    .desc h1 {
+        font-size: 20px;
+    }
+
+    .desc p {
+        font-size: .9em;
+    }
+
+    .wrapper2 {
+        width: 100%;
+    }
+
+    .wrapper2 h1 {
+        font-size: 20px;
+    }
+
+    .wrapper2 th,
+    .wrapper2 td {
+        font-size: .8em;
+    }
+
+    .wrapper3 {
+        width: 90%;
+    }
+
+    .wrapper3 th,
+    .wrapper3 td {
+        font-size: .65em;
+    }
+}
+
+
+
+@media screen and (max-width: 945px) {
+    .wrapper {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .wrapper .img {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .wrapper .desc {
+        width: 100%;
+    }
+
+    .desc h1 {
+        font-size: 20px;
+    }
+
+    .desc p {
+        font-size: .9em;
+    }
+
+    .wrapper2 {
+        width: 100%;
+    }
+
+    .wrapper2 h1 {
+        font-size: 20px;
+    }
+
+    .wrapper2 th,
+    .wrapper2 td {
+        font-size: .8em;
+    }
+
+    .wrapper3 {
+        width: 90%;
+    }
+
+    .wrapper3 th,
+    .wrapper3 td {
+        font-size: .65em;
+    }
+}
